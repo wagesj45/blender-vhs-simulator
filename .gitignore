@@ -1,2 +1,5 @@
 #Backup Blend File
 *.blend[0-9]
+
+#Render Folder
+/render
