@@ -1,6 +1,6 @@
 # Blender VHS Simulator Pipeline
 
-This repository contains a blender based VHS simulator pipeline for video processing. There is a blend file that contains a compositing set up that simulates different physical aspects of VHS tapes, and a bash script that renders an interlaced video file to match the [480i NTSC standard](https://en.wikipedia.org/wiki/480i).
+This repository contains a blender based VHS simulator pipeline for video processing. There is a blend file that contains a compositing set up that simulates different physical aspects of VHS tapes, and a bash script that renders an interlaced video file to match the [480i NTSC standard](https://en.wikipedia.org/wiki/480i). Many physical aspects of the tape simulation are recreated from the descriptions in [Scotch Video Tapes 1980's VHS Primer](https://youtu.be/Cj0lvGqTkD0) video.
 
 ## VHS Simulator
 
@@ -16,11 +16,15 @@ This node reduces the color information in relation to the luminance information
 
 ### Signal to Noise Ratio
 
-This node simulates the signal to noise ratio of data held by the magnetic tape. A higher dB value results in a higher quality image.
+This node simulates the signal to noise ratio of data held by the magnetic tape. A higher dB value results in a higher quality image. This can be adjusted for both the luma signal and the chroma signal separately.
 
 ### Color Bleed
 
 This node simulates CRT-like RGB color bleed onto other pixels. The bleed per color can be dialed up and down.
+
+### Phase Modulation Noise
+
+[Phase modulation noise](https://youtu.be/Cj0lvGqTkD0?t=846) simulates color banding seen in degraded tape. Banding for each color can be controlled by intensity, band offset, and band scale which approximates the number of bands seen. A lower scale meakes the bands larger, and a larger scale makes the bands thinner but increases their number.
 
 ## Interlacing Script
 
