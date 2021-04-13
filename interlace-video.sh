@@ -19,6 +19,7 @@ while getopts ":i:o:r:" opt; do
       r) rate="$OPTARG"
       ;;
       \?) echo "Invalid option -$OPTARG" >&2
+	  exit
       ;;
    esac
 done
