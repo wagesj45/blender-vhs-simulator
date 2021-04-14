@@ -4,6 +4,7 @@
 if [ "$1" = "-h" ]; then
    echo "Forces interlacing of a series of frames into a lossless."
    echo "interlace-video.sh -i [input=render/%4d.png] -o [output=render/interlaced.mp4] -r [rate=30]"
+   exit
 fi
 
 input="render/%4d.png"
