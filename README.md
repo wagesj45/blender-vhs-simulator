@@ -24,7 +24,7 @@ This node simulates CRT-like RGB color bleed onto other pixels. The bleed per co
 
 ### Phase Modulation Noise
 
-[Phase modulation noise](https://youtu.be/Cj0lvGqTkD0?t=846) simulates color banding seen in degraded tape. Banding for each color can be controlled by intensity, band offset, and band scale which approximates the number of bands seen. A lower scale meakes the bands larger, and a larger scale makes the bands thinner but increases their number.
+[Phase modulation noise](https://youtu.be/Cj0lvGqTkD0?t=846) simulates color banding seen in degraded tape. Banding can be controlled by intensity, offset, and scale which correlates to the number of bands seen. A lower scale makes the bands larger, and a larger scale makes the bands thinner but increases their number.
 
 ## Interlacing Script
 
